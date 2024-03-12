@@ -1,0 +1,22 @@
+theme = "zhxo-red"
+
+[editor]
+true-color = true
+auto-pairs = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["selections", "position"]
+
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+C-right = "move_next_word_start"
+C-left = "move_prev_word_end"
+
+[keys.insert]
+C-right = "move_next_word_start"
+C-left = "move_prev_word_end"
