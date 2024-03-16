@@ -5,6 +5,7 @@ true-color = true
 auto-pairs = true
 mouse = false
 line-number = "relative"
+auto-format = true
 
 [editor.statusline]
 left = ["mode", "spinner"]
@@ -25,4 +26,7 @@ C-left = "move_prev_word_end"
 C-right = "move_next_word_start"
 C-left = "move_prev_word_end"
 C-c = "normal_mode"
-
+C-h = "move_char_left"
+C-j = "move_visual_line_down"
+C-k = "move_visual_line_up"
+C-l = "move_char_right"
