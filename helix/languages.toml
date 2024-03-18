@@ -1,0 +1,20 @@
+[language-server.eslint]
+command = "vscode-eslint-language-server"
+args = ["--stdio"]
+
+[language-server.eslint.config]
+codeActionsOnSave = { mode = "all", "source.fixAll.eslint" = true }
+format = { enable = true }
+nodePath = ""
+quiet = false
+rulesCustomizations = []
+run = "onType"
+validate = "on"
+experimental = {}
+problems = { shortenToSingleLine = false }
+
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "eslint" ]
+auto-format = true
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
