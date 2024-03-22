@@ -1,0 +1,26 @@
+format = "$username $directory $character$git_branch"
+add_newline = true
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style)"
+style = "fg:255 bold"
+
+[username]
+show_always = true
+#format = "[:$user](fg:245)"
+format = "[:$user](yellow)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname](fg:228)"
+
+[character]
+error_symbol = "[λ](bold red)"
+success_symbol = "[λ](bold fg:37)"
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = 'bold green'
+truncation_length = 4
+truncation_symbol = ''
+# ignore_branches = ['master', 'main']
