@@ -16,5 +16,4 @@ problems = { shortenToSingleLine = false }
 [[language]]
 name = "typescript"
 language-servers = [ "typescript-language-server", "eslint" ]
-auto-format = true
-formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = false
