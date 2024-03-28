@@ -5,11 +5,14 @@ true-color = true
 auto-pairs = true
 mouse = false
 line-number = "relative"
+cursorline = true
+bufferline = "multiple"
 
 [editor.statusline]
 left = ["mode", "spinner"]
-center = ["file-name"]
+center = ["file-name", "total-line-numbers"]
 right = ["selections", "position"]
+separator = "|"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -20,6 +23,11 @@ git-ignore = false
 
 [editor.lsp]
 auto-signature-help = false
+
+[editor.indent-guides]
+render = true
+character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
 
 [keys.normal]
 C-right = "move_next_word_start"
