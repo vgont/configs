@@ -24,10 +24,10 @@ git-ignore = false
 [editor.lsp]
 auto-signature-help = false
 
-[editor.indent-guides]
-render = true
-character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽"
-skip-levels = 1
+# [editor.indent-guides]
+# render = true
+# character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽"
+# skip-levels = 1
 
 [keys.normal]
 C-right = "move_next_word_start"
@@ -40,3 +40,4 @@ C-c = "normal_mode"
 
 [keys.normal.space]
 q = ":bc"
+s = "select_all"
